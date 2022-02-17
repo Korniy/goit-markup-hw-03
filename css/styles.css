@@ -183,7 +183,19 @@ span {
 }
 
 /* Секція переваги ADVANTAGES */
+.advantages-list {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-title {
+  padding-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
