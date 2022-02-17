@@ -288,7 +288,12 @@ span {
 .footer {
   background-color: var(--black-bg-color);
 }
+
 .footer-link {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 20px;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -297,7 +302,14 @@ span {
   color: var(--main-light-bg);
 }
 
+.adress-item {
+  display: block;
+}
+
 .adress-desk {
+  display: block;
+  padding-bottom: 9px;
+
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
