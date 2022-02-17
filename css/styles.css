@@ -1,8 +1,8 @@
 :root {
   /* Основний шрифт */
-  --main-font: 'Roboto', sans-serif;
+  --main-font: "Roboto", sans-serif;
   /* Другорядний шрифт */
-  --secondary-font: 'Raleway', sans-serif;
+  --secondary-font: "Raleway", sans-serif;
 
   /* Основний колір */
   --main-text-color: #212121;
@@ -22,6 +22,22 @@ body {
   color: var(--main-text-color);
 }
 
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 .list {
   list-style: none;
 }
@@ -30,12 +46,25 @@ body {
   text-decoration: none;
 }
 
+span {
+  color: var(--accent-text-color);
+}
+
 /* Шапка сайту HEDER */
 .header {
   background-color: var(--main-light-bg);
 }
 
+.header-container {
+  display: flex;
+}
+
 .header-link {
+  margin-top: 24px;
+  margin-right: 93px;
+  margin-bottom: 25px;
+  margin-left: 215px;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -44,8 +73,18 @@ body {
   color: #000000;
 }
 
-span {
-  color: var(--accent-text-color);
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-link {
@@ -65,7 +104,12 @@ span {
   color: var(--accent-text-color);
 }
 
-.header-mail {
+.header-mail,
+.header-phone {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 50px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -74,11 +118,11 @@ span {
 }
 
 .header-phone {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--second-text-color);
+  margin-right: 215px;
+}
+
+.header-mail {
+  margin-left: 331px;
 }
 
 .header-phone:hover,
@@ -94,6 +138,7 @@ span {
 /* Секція герой HERO */
 .hero {
   background-color: var(--black-bg-color);
+  text-align: center;
 }
 
 .hero-title {
