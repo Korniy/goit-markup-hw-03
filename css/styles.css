@@ -211,25 +211,65 @@ span {
 }
 
 /* Секція заняття WORK */
+.work-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .work-title {
+  padding-bottom: 50px;
+
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Секція команда TEAM */
 .team {
   background-color: var(--second-light-bg);
 }
+
+.container-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .team-title {
+  padding-bottom: 50px;
+
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
 
+.team-list {
+  display: flex;
+}
+
+.team-item:not(last-child) {
+  margin-right: 30px;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
+
 .team-subtitle {
+  margin-bottom: 10px;
+
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -237,6 +277,7 @@ span {
 }
 
 .team-text {
+  text-align: center;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
