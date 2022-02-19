@@ -55,7 +55,7 @@ span {
 /* Шапка сайту HEDER */
 .header {
   background-color: var(--main-light-bg);
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -67,8 +67,6 @@ span {
   margin-right: 93px;
   margin-top: 24px;
   margin-bottom: 25px;
-  /* 
-  margin-left: 215px; */
 
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -81,12 +79,12 @@ span {
 .nav-list {
   display: flex;
   align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .nav-item {
   display: block;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 .nav-item:not(:last-child) {
@@ -94,9 +92,6 @@ span {
 }
 
 .nav-link {
-  margin-top: 32px;
-  margin-bottom: 32px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -113,10 +108,8 @@ span {
   color: var(--accent-text-color);
 }
 
-.header-mail,
-.header-phone {
-  margin-top: 32px;
-  margin-bottom: 32px;
+.header-mail {
+  margin-left: 331px;
   margin-right: 50px;
 
   font-weight: 500;
@@ -127,11 +120,17 @@ span {
 }
 
 .header-phone {
-  margin-right: 215px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
 }
 
-.header-mail {
-  margin-left: 331px;
+.header-wrapper {
+  margin-left: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .header-phone:hover,
@@ -148,11 +147,12 @@ span {
 .hero {
   background-color: var(--black-bg-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -163,11 +163,12 @@ span {
 }
 
 .hero-btn {
-  padding: 10px 32px;
-  margin-bottom: 200px;
+  padding: 9px 32px;
   border-radius: 4px;
   border: 1px solid var(--accent-text-color);
+  min-width: 200px;
 
+  align-items: center;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
@@ -184,10 +185,13 @@ span {
 }
 
 /* Секція переваги ADVANTAGES */
-.advantages-list {
-  display: flex;
+.advantages {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.advantages-list {
+  display: flex;
 }
 
 .advantages-item:not(:last-child) {
@@ -195,7 +199,7 @@ span {
 }
 
 .advantages-title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -212,13 +216,12 @@ span {
 }
 
 /* Секція заняття WORK */
-.work-container {
-  padding-top: 94px;
+.work {
   padding-bottom: 94px;
 }
 
 .work-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   text-align: center;
   font-weight: 700;
@@ -238,15 +241,11 @@ span {
 /* Секція команда TEAM */
 .team {
   background-color: var(--second-light-bg);
-}
-
-.container-team {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .team-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   text-align: center;
   font-weight: 700;
@@ -259,12 +258,13 @@ span {
   display: flex;
 }
 
-.team-item:not(last-child) {
+.team-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-img {
-  margin-bottom: 30px;
+.team-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-subtitle {
@@ -288,12 +288,13 @@ span {
 /* Секція підвал FOOTER */
 .footer {
   background-color: var(--black-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-link {
   display: block;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -304,7 +305,7 @@ span {
 }
 
 .adress-item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .adress-desk {
@@ -337,12 +338,8 @@ span {
   color: var(--accent-text-color);
 }
 
-.padding-link {
-  padding-bottom: 60px;
-}
-
 /* Секція портфоліо PORTFOLIO */
-.container-portfolio {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -350,15 +347,15 @@ span {
 .portfolio-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .portfolio-item:not(:last-child) {
-  padding-right: 8px;
+  margin-right: 8px;
 }
 
 .portfolio-btn {
-  padding: 6px 22px;
+  padding: 5px 22px;
   border-radius: 4px;
   border: 1px solid #f5f4fa;
 
@@ -390,6 +387,10 @@ span {
   margin-left: 30px;
 }
 
+.portfolio-img.no-gap {
+  display: block;
+}
+
 .portfolio-second-item {
   flex-basis: calc((100% - 90px) / 3);
 }
@@ -398,10 +399,16 @@ span {
   color: var(--accent-text-color);
 }
 
+.portfolio-wrapper {
+  padding: 20px 24px;
+  background: #ffffff;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
 .portfolio-title {
-  padding-top: 20px;
-  padding-bottom: 4px;
-  padding-left: 24px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -410,9 +417,6 @@ span {
 }
 
 .portfolio-text {
-  padding-left: 24px;
-  padding-bottom: 20px;
-
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
