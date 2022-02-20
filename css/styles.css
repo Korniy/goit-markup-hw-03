@@ -194,6 +194,11 @@ span {
   display: flex;
 }
 
+.advantages-item {
+  width: 270px;
+  height: 101px;
+}
+
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -241,6 +246,7 @@ span {
 /* Секція команда TEAM */
 .team {
   background-color: var(--second-light-bg);
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
